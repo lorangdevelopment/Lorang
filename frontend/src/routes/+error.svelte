@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SvelteSeo from 'svelte-seo';
 	import { page } from '$app/state';
 </script>
 
@@ -17,3 +18,5 @@
 		</ul>
 	</div>
 </div>
+
+<SvelteSeo title="Siden findes ikke" />

@@ -26,9 +26,9 @@ export const options = {
 	service_worker: false,
 	templates: {
 		app: ({ head, body, assets, nonce, env }) =>
-			'<!doctype html>\n<html lang="da">\n\t<head>\n\t\t<meta charset="utf-8" />\n\t\t<link rel="icon" href="' +
+			'<!doctype html>\n<html lang="da">\n\t<head>\n\t\t<meta charset="utf-8" />\n\t\t<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />\n\t\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\t\t<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />\n\t\t<!--\n\t\t<meta name="google-site-verification" content="">\n\t\t-->\n\t\t<meta name="apple-mobile-web-app-title" content="Informeret" />\n\t\t<meta name="application-name" content="Informeret" />\n\t\t<meta name="referrer" content="always" />\n\t\t<!--\n\t\t<meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID" />\n\t\t<meta property="fb:pages" content="YOUR_FACEBOOK_PAGE_ID" />\n\t\t<link rel="sitemap" href="" type="application/xml">\n\t\t-->\n\t\t<link rel="manifest" href="' +
 			assets +
-			'/favicon.png" />\n\t\t<meta name="viewport" content="width=device-width, initial-scale=1" />\n\t\t' +
+			'/site.webmanifest" />\n\t\t' +
 			head +
 			'\n\t</head>\n\t<body data-sveltekit-preload-data="hover">\n\t\t<div style="display: contents">' +
 			body +
@@ -42,7 +42,7 @@ export const options = {
 			message +
 			'</h1>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n'
 	},
-	version_hash: '1b4aemu'
+	version_hash: '5y8u0m'
 };
 
 export async function get_hooks() {
